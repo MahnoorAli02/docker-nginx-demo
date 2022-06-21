@@ -1,4 +1,5 @@
-FROM nginx:14
+FROM alpine:%%ALPINE_VERSION%%
+
 
 # Setting working directory. All the path will be relative to WORKDIR
 WORKDIR /usr/src/app
