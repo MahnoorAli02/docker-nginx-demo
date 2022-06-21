@@ -12,7 +12,6 @@ RUN set -x \
     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx \
     && apkArch="$(cat /etc/apk/arch)" \
     && nginxPackages="%%PACKAGES%%
-    " \
 # install prerequisites for public key and pkg-oss checks
     && apk add --no-cache --virtual .checksum-deps \
         openssl \
